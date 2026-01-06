@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+.main_page::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 0;
+}
+
+.header,
+.about {
+    position: relative;
+    z-index: 1;
+}
+.main_page{
+    background-image: url("images/pexels-pixabay-372851.jpg");
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    padding: 2px;
+    height: auto;
+    max-height: 100vh;  
+}
+.header{
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.landings{
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: white;
+}
+.landings a {
+    margin-right: 20px;        /* space between links */
+    text-decoration: none;
+}
+nav{
+    color: white;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+nav a:hover{
+    color: bisque;
+}
+.name{
+    display: flex;
+    flex-direction: row;
+}
+.heading{
+    color: bisque;
+    font-size: 18px;
+    font-family: cursive;
+    margin: 2px;
+}
+.icon {
+    font-size: 32px;
+    color: #ff6347; /* bakery-themed color */
+}
+.about{
+    align-items: center;
+    display: flex;             /* Use Flexbox */
+    flex-direction: column;    /* Stack h1 and p vertically */
+    justify-content: center;
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.bakerysname{
+    font-size: clamp(36px, 6vw, 94px);
+    font-family: cursive;
+    font-weight: 700;
+    color: bisque;
+    text-shadow: 3px   #e3dfde;;
+    letter-spacing: 3px;
+    margin: 0px;
+}
+.para{
+    font-size: 15px;
+    color: bisque;
+    font-weight: 700;
+    margin: 0px;
+}
+.since{
+    color: bisque;
+    margin: 5px;
+}
+.btn{
+    height: 30px;
+    width: 100px;
+    padding: 3px;
+    background-color: rgb(215, 190, 160);
+    color: white;
+    border-color:rgb(215, 190, 160);
+    border-radius: 8px;
+    font-size: 9px;
+}
+.oldestUs{
+    background-color: rgb(215, 190, 160);
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px; 
+    padding: 30px;
+}
+.pic{
+    height: auto;
+    max-width: 40%;
+    border-radius: 5px;
+    border: 5px solid #f6f5f5;
+    
+}
+.history{
+    
+    color: rgb(39, 66, 66);
+}
+.oldesth1{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serifs;
+}
+.oldestp{
+    font-size: 14px;
+    color: grey;
+}
+.oldestl{
+    color: grey;
+    font-size: 14px;
+}
+.btn2{
+    height:25px;
+    width: 100px;
+    padding: 2px;
+    background-color: rgb(251, 251, 251);
+    color: rgb(199, 178, 151);
+    border-radius: 10px;
+    font-size: 7px;
+    border-color: white;
+    margin-top:7px;
+}
+.newArrivals{
+    align-items: center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.newh1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+    color: saddlebrown;
+    margin-top: 10px;
+}
+.newp{
+    color: slategrey;
+    font-size: 10px;
+    margin: 0px;
+    letter-spacing: 5px;
+}
+hr {
+    align-items: center;
+    border: none;               /* remove default line */
+    height: 2px;                /* thickness of the line */
+    width: 30%;                 /* control the length */
+    background-color: rgb(199, 178, 151); /* your custom color */
+    border-radius: 1px;         /* rounded edges */
+    margin: 10px;         /* vertical spacing + center */
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 15px;
+}
+.menup{
+    margin: 0;
+    font-size: 10px;
+    color: rgb(165, 151, 151);
+}
+.b1{
+    height: 20vh;
+    width: 17vh;
+    border: 2px solid rgb(208, 205, 205);
+}
+.offer{
+    background-image: url("images/pexels-ron-lach-8176609.jpg");
+    height: 40vh;
+    background-size: cover;
+     width: 100%;
+}
+.discount{
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 180px;
+    padding: 20px;
+}
+.discount hr{
+    height: 2px; 
+    width: 45%;                 /* control the length */
+    background-color: rgb(199, 178, 151);
+    margin: 0px;
+}
+.discount h1{
+    font-size: 34px;
+    color: beige;
+    font-family: 'Times New Roman', Times, serif;
+    margin :40;
+}
+.discount p{
+    font-size: 10px;
+    color: bisque;
+}
+.footerSection{
+    height: 25vh;
+    background-color: rgb(47, 47, 47);
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    font-size: 10px; 
+    padding: 10px;
+    border: 5px;
+}
+.add{
+    
+    padding: 5px;
+}
+.btn:hover,
+.btn2:hover {
+    background-color: rgb(183, 56, 56);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.footerSection div h1,
+.footerSection div h2,
+.footerSection div h3 {
+    margin-bottom: 8px;
+    color: bisque;
+}
+
+@media (min-width: 768px) {
+    .main_page{
+        min-height: 100vh;
+        padding: 50px;
+    }
+    .bakerysname{
+        font-size: 94px;
+    }
+    .heading{
+        font-size: 28px;
+    }
+    nav{
+        font-size: 25px;
+    }
+    .header {
+        
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .landings {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    
+
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: wrap;
+    }
+
+    .footerSection {
+        flex-direction: row;
+        height: auto;
+        gap: 15px;
+    }
+    .b1{
+        height: 45vh;
+        width: 45vh;
+        justify-content: center;
+     
+    }
+    .newh1{
+        font-size: 54px;
+        margin-top: 30px;
+    }
+    .newp{
+        font-size: 20px;
+    }
+    .btn{
+        height: 55px;
+       width:150px;
+    }
+
+}
