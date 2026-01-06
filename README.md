@@ -3,7 +3,7 @@
 A responsive bakery landing page created using HTML and CSS.
 
 ## Live Demo
-[Will be added after GitHub Pages]
+ https://inshafatima2.github.io/bakery-website/
 
 ## Features
 - Hero section
